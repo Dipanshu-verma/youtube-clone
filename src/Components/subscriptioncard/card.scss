@@ -1,0 +1,37 @@
+@import '../../_base.scss';
+
+.icon-thumnail{
+    @include line-clamp(3)
+    
+}
+.channel-icon{
+ 
+    img{
+        width:150px;
+         height:150px; 
+         border-radius:50%;
+         margin-left:3rem;
+    }
+}
+
+@media (max-width: $breakpoint-small ){
+    .channel-icon{
+        margin-right: .5rem;
+         h2{
+            font-size: 16px;
+
+         }
+        img{
+            width:60px;
+             height:60px; 
+             border-radius:50%;
+             margin-left:0rem;
+        }
+    }
+    .icon-thumnail{
+        font-size: 12px;
+        @include line-clamp(2)
+    }
+
+}
+

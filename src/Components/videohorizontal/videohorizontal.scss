@@ -1,0 +1,41 @@
+@import '../../_base.scss';
+ 
+ .videoHoriZontal{
+  font-size: 14px;
+    &__left{
+        position: relative;
+        text-align: center;
+      
+        .videoHoriZontal__thumbnail{
+            border-radius: 5px;
+            width: 100%;
+            .videoHoriZontal__thumbnail-wrapper{
+                width: 100%;
+            }
+        }
+    }
+    &__duration{
+        position: absolute;
+        bottom: 2px;
+        right: 14px;
+        padding: 0.1rem 0.2rem;
+        background-color: black;
+        border-radius: 3px;
+        font-size: 10px;
+    }
+ }
+ .videoHoriZontal__right{
+    font-size: 0.8rem;
+    .videoHoriZontal__title{
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.3px;
+        @include line-clamp(2)
+    }
+
+ }
+ .videoHoriZontal_channel_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+ }
